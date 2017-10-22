@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <title>Expreso Tec</title>
 </head>
 
@@ -19,12 +20,6 @@
                </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a href="#explore-head-section" class="nav-link">Rutas</a>
-          </li>
-          <li class="nav-item active">
-            <a href="#create-head-section" class="nav-link">Mapa</a>
-          </li>
         </ul>
       </div>
     </div>
@@ -36,52 +31,38 @@
       <div class="home-inner">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 d-none d-lg-block">
-              <h1 class="display-4">Build <strong>social profiles</strong> and gain revenue & profits</h1>
-              <div class="d-flex flex-row">
-                <div class="p-4 align-self-start">
-                  <i class="fa fa-check"></i>
-                </div>
-                <div class="p-4 align-self-end">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quaerat cupiditate quia voluptate voluptatum repellendus?
-                </div>
-              </div>
-              <div class="d-flex flex-row">
-                <div class="p-4 align-self-start">
-                  <i class="fa fa-check"></i>
-                </div>
-                <div class="p-4 align-self-end">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quaerat cupiditate quia voluptate voluptatum repellendus?
-                </div>
-              </div>
-              <div class="d-flex flex-row">
-                <div class="p-4 align-self-start">
-                  <i class="fa fa-check"></i>
-                </div>
-                <div class="p-4 align-self-end">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quaerat cupiditate quia voluptate voluptatum repellendus?
+            <div class="col-lg-8">
+              <!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1eWNZjTRR1Q7Oda-imLKp4nDfD08&z=12" width="550" height="400"></iframe> -->
+              <div class="card bg-primary text-center card-form">
+                <div class="card-body">
+                  <h3>Registrate</h3>
+                  <form>
+                    <div class="form-group">
+                      <input id="matricula" type="text" placeholder="Matricula">
+                    </div> 
+                    <div class="form-group">
+                      <input id="email" type="text" placeholder="email">
+                    </div>      
+                    <div class="form-group">
+                      <input id="contrasena" type="password" placeholder="Contrasena">
+                    </div>
+                    <button id="Rsubmit" type="button" class="btn btn-secondary">Registrarse</button>
+                  </form>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card bg-primary text-center card-form">
                 <div class="card-body">
-                  <h3>Sign Up Today</h3>
-                  <p>Please fill out this form to register</p>
+                  <h3>Log In</h3>
                   <form>
                     <div class="form-group">
-                      <input type="text" class="form-control form-control-lg" placeholder="Username">
-                    </div>
+                      <input id="user" type="text" placeholder="Username">
+                    </div>       
                     <div class="form-group">
-                      <input type="email" class="form-control form-control-lg" placeholder="Email">
+                      <input id="password" type="password" placeholder="Password">
                     </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control form-control-lg" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control form-control-lg" placeholder="Confirm Password">
-                    </div>
-                    <input type="submit" value="Submit" class="btn btn-outline-light btn-block">
+                    <button id="submit" type="button" class="btn btn-secondary">Log in</button>
                   </form>
                 </div>
               </div>
@@ -91,87 +72,29 @@
       </div>
     </div>
   </header>
-
-  <!-- EXPLORE HEAD -->
-  <section id="explore-head-section">
-    <div class="container">
-      <div class="row">
-        <div class="col text-center">
-          <div class="p-5">
-            <h1 class="display-4">Rutas</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPLORE SECTION -->
-  <section id="explore-section" class="bg-light text-muted py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <table class="table">
-            <thead class="thead-inverse">
-              <tr>
-                <th> </th>
-                <th>6:45</th>
-                <th>7:15</th>
-                <th>8:15</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Rutas Activas</th>
-                <td><a href="RutaTransito.html">RUTA TRÁNSITO</a><br>
-                  <a href="RutaChapultepec.html">RUTA CHAPULTEPEC</a><br>
-                  <a href="RutaCañadas.html">RUTA CAÑADAS</a><br>
-                  <a href="RutaSur.html">RUTA SUR</a><br>
-                  <a href="RutaCiudadela.html">RUTA CIUDADELA</a></td>
-                <td><a href="RutaSantanita.html">RUTA SANTANITA</a><br>
-                  <a href="RutaPalomar.html">RUTA PALOMAR</a><br>
-                  <a href="RutaGuadalupe.html">RUTA GUADALUPE</a><br></td>
-                <td><a href="RutaSur2.html">RUTA SUR 2</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-md-4">
-          <h3>Rutas Activas</h3>
-          <p>Estas son las rutas disponibles <strong>seleccionala</strong> para ver su localizacion.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CREATE HEAD -->
-  <section id="create-head-section" class="bg-primary">
-    <div class="container">
-      <div class="row">
-        <div class="col text-center">
-          <div class="p-5">
-            <h1 class="display-4">Mapa</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CREATE SECTION -->
-  <section id="create-section" class="bg-light text-muted py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1eWNZjTRR1Q7Oda-imLKp4nDfD08&z=12" width="640" height="480"></iframe>
-        </div>
-        <div class="col-md-6">
-            
-        </div>
-      </div>
-    </div>
-  </section>
+  
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/jque.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/prueba.js"></script>
+
+
+  <script>
+    $(document).ready(function(){
+      $.ajax({
+      type: 'GET',
+      url: 'http://ec2-34-208-222-53.us-west-2.compute.amazonaws.com:3000/',
+      success: function(data) {
+        console.log( data); //pone lo que esta en el jason del url
+      }
+      })
+    });
+  </script>
+
+
 </body>
 
 </html>
